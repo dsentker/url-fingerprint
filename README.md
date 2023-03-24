@@ -89,7 +89,7 @@ $reader = new \UrlFingerprint\FingerprintReader([
     'secret' => 's3cre7v4lu3',
     'ignore_fragment' => true,
 ]);
-// Create fingerprints for two same URLs except the fragment
+// Create fingerprints for two equal URLs except the fragment
 $fingerprint1 = $reader->capture('https://www.example.com/?foo');
 $fingerprint2 = $reader->capture('https://www.example.com/?foo#bar');
 
